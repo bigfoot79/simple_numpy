@@ -7,7 +7,7 @@
 import numpy.matlib 
 import numpy as np  
 from matplotlib import pyplot as plt 
-
+from decimal import *
 
 # method/statement declarations
 
@@ -74,11 +74,15 @@ def main():
     y = np.loadtxt('outfile.txt')
     print y
 
+    # simple arithmetic operations
+    # Decimal numbers don't round correctly, as 10*[0.1] does not equal 1.0
     a = sum([0.1]*10)
     print a
 
+    print(sum([0.1]*10)==1.0)
 
-    
+    print(sum([Decimal('0.1')]*10)==Decimal('1.0'))
+
 if __name__ == '__main__':
 
     main()
