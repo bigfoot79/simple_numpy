@@ -42,7 +42,15 @@ def main():
     z = numpy.bitwise_or(x,y)
     print z
 
+    # statistical functions
 
+    # identify the 50th percentile
+    a = np.array([2,3,4,5,6,7,8,9])
+    print a
+    b = np.percentile(a,50)
+    print b
+
+    
           
 if __name__ == '__main__':
 
