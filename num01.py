@@ -67,7 +67,15 @@ def main():
     plt.plot(x,y) 
     plt.show()
     
-          
+    # standard I/O operations
+
+    x = np.arange(1,100,0.1)
+    np.savetxt('outfile.txt',x)
+    y = np.loadtxt('outfile.txt')
+    print y
+    
+
+    
 if __name__ == '__main__':
 
     main()
