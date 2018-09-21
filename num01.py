@@ -69,11 +69,14 @@ def main():
     
     # standard I/O operations
 
-    x = np.arange(1,100,0.1)
+    x = np.arange(1,10.1,0.1)
     np.savetxt('outfile.txt',x)
     y = np.loadtxt('outfile.txt')
     print y
-    
+
+    a = sum([0.1]*10)
+    print a
+
 
     
 if __name__ == '__main__':
