@@ -1,8 +1,11 @@
 
+# https://docs.scipy.org/doc/numpy/reference/routines.html
+# https://www.tutorialspoint.com/numpy/numpy_matrix_library.htm
+
+
 # import declarations
-import numpy as np
-import matplotlib as mpl
-import matplotlib.pyplot as plt
+import numpy.matlib 
+import numpy as np  
 
 
 # method/statement declarations
@@ -11,6 +14,13 @@ import matplotlib.pyplot as plt
 
 def main():
 
+    x = np.matrix('1,2,3;4,5,6')
+    y = np.matrix('1,2;3,4;5,6') 
+    print x
+    print y
+
+    z = x*y
+    print z
     
           
 if __name__ == '__main__':
