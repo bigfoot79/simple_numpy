@@ -6,6 +6,7 @@
 # import declarations
 import numpy.matlib 
 import numpy as np  
+from matplotlib import pyplot as plt 
 
 
 # method/statement declarations
@@ -44,12 +45,27 @@ def main():
 
     # statistical functions
 
-    # identify the 50th percentile
+    # (a) identify the 50th percentile
     a = np.array([2,3,4,5,6,7,8,9])
     print a
     b = np.percentile(a,50)
     print b
 
+    # (b) add arrays together
+    a = np.array([1,2])
+    b = np.array([3,4])
+    c = np.add(a,b)
+    print c
+
+    # matplotlib example
+    x = np.arange(1,11,0.1) 
+    y = 2 * (x*x) + 5 
+    y = np.sin(x)
+    plt.title("Matplotlib demo") 
+    plt.xlabel("x axis caption") 
+    plt.ylabel("y axis caption")
+    plt.plot(x,y) 
+    plt.show()
     
           
 if __name__ == '__main__':
